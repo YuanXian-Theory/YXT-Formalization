@@ -1,0 +1,20 @@
+# Lean
+build/
+*.olean
+*.olean.tmp
+lean-toolchain
+
+# Coq
+*.vo
+*.vos
+*.vok
+*.glob
+.coq-native/
+
+# Python
+__pycache__/
+*.pyc
+
+# General
+.DS_Store
+.vscode/
