@@ -28,3 +28,41 @@ The theory is realized in two foundational mathematical systems:
 - Prediction of the True-Circle Self-Referon (TCSR)
 
 ## Repository Structure
+lean/                  # Main formalization (Lean 4)
+├── YXTT/
+├── ZFC_Extension/
+├── Constants/
+└── Theorems/
+
+coq/                   # Coq formalization
+python/                # Numerical verification
+docs/                  # Papers and supplementary files
+
+## Software / Repository
+[@misc](https://x.com/misc){yxt_formalization,
+  author       = {YuanXian Institute},
+  title        = {YXT-Formalization},
+  year         = {2026},
+  url          = {[https://github.com/YuanXian-Theory/YXT-Formalization](https://github.com/YuanXian-Theory/YXT-Formalization)},
+  doi          = {10.5281/zenodo.19965180}
+}
+Software / Repository
+
+## Quick Start (Lean 4)
+git clone [https://github.com/YuanXian-Theory/YXT-Formalization.git](https://github.com/YuanXian-Theory/YXT-Formalization.git)
+cd YXT-Formalization
+
+# Build Lean 4 project
+lake exe cache get
+lake build
+
+# Run numerical calculations
+cd python && python run_all_calculations.py
+
+## Links
+•  Main Paper — DOI: 10.5281/zenodo.1996518
+•  Zenodo Archive — https://zenodo.org/records/1996518
+•  Lean 4 — https://lean-lang.org/
+•  Coq Proof Assistant — https://coq.inria.fr/
+
+
