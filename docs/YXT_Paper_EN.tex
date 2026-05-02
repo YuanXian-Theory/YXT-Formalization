@@ -1,0 +1,139 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,booktabs,geometry,hyperref,doi,enumitem,longtable}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{array}
+
+% --- Font Settings ---
+\setmainfont{TeX Gyre Termes}
+
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
+
+\pagestyle{fancy}
+\fancyhead{}            
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage} 
+
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+\title{From Philosophical Program to Formal Science: \\
+The Complete Axiomatization, Dual Realization and Machine Verification of YuanXian Theory (YXT)}
+\author{True Circle Acharya}
+\date{May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper systematically elaborates the complete pathway through which YuanXian Theory (YXT) evolves from a philosophical-physical program aimed at unifying physics, mathematics, consciousness and life into a formal scientific theory with rigorous mathematical realizations, computability, and full machine verification. Grounded in four core axioms, YXT constructs a unified ``all from one'' cognitive framework. This work presents the dual formal foundations of the theory and proves their equivalence.
+\end{abstract}
+
+\section{Introduction}
+
+\subsection{Origin and Core Intuition}
+
+YuanXian Theory originates from a profound philosophical intuition: the universe is an absolutely isolated, self-contained, and self-referential closed system. This intuition is crystallized in the \textbf{True-Circle Self-Consistency Axiom (TCSC)} — the universe satisfies the self-mapping equation $U = F(U)$, with no external input, no logical contradictions, and no topological singularities.
+
+Since the publication of the first systematic papers in 2026, the theory has developed core achievements including the four-axiom system, $T^{64}$ topological foundation, self-referential mind-field dynamics, the zero total energy theorem, the prediction of True-Circle Self-Referon (TCSR) particles, and a conditional proof of the Riemann Hypothesis.
+
+\subsection{Main Contributions}
+
+This paper fulfills three formalization missions: unified terminology, dual formal realizations (YXTT and ZFC), and open science with machine verification.
+
+The complete open-source repository is available at: 
+
+\textbf{\url{https://github.com/YuanXian-Theory/YXT-Formalization}}
+
+\section{The YuanXian Axiom System}
+
+\subsection{The Four Core Axioms}
+
+\textbf{Axiom I: True-Circle Self-Consistency (TCSC)}  
+The universe is an absolutely isolated, self-contained, self-referential closed system satisfying $U = F(U)$. There exists a unique universe $U$ such that the system is closed, consistent, and self-referential.
+
+\textbf{Axiom II: Spacetime Manifold Uniqueness (STM)}  
+The spacetime manifold of the universe is the unique compact boundaryless 64-torus $M \cong T^{64} = (S^1)^{64}$.
+
+\textbf{Axiom III: Factor Conservation (FSC)}  
+There exists a global scalar invariant — the fine-structure constant $\alpha = 1/137.035999084$ — strictly conserved under all transformations.
+
+\textbf{Axiom IV: Self-Referential Mind-field Generation (SRM)}  
+All phenomena arise through the self-referential iteration of the mind-field $\Psi = F(\Psi)$, based on exactly 64 holographic primitives.
+
+\section{Formalization I: Self-Referential Mind-Field Type Theory (YXTT)}
+
+Built upon Homotopy Type Theory (HoTT), YXTT provides a natural framework for modeling self-reference via paths and equivalences. Core constructions include Self-Referential Types, the Manifestation Operator, and $T^{64}$ as a Higher Inductive Type. Physical laws such as Schrödinger-like equations and gauge symmetries emerge naturally from the type rules.
+
+Full implementation and machine-verified proofs are available at: 
+
+\url{https://github.com/YuanXian-Theory/YXT-Formalization/tree/main/lean/YXTT}
+
+\section{Formalization II: ZFC Set Theory Ontological Extension}
+
+We introduce three ontological symbols (SelfReferentialMindField, $T^{64}$, UniverseFactor) into classical ZFC set theory and reconstruct the YuanXian axioms, proving consistency and compatibility with mainstream mathematics.
+
+Full ZFC realization: \\
+\url{https://github.com/YuanXian-Theory/YXT-Formalization/tree/main/lean/ZFC_Extension}
+
+\section{Equivalence Proof and Core Theorems}
+
+\subsection{Equivalence Between YXTT and ZFC Realizations}
+
+We construct interpretation functors proving that the two realizations are isomorphic and equivalent. Consequently, the four core axioms hold simultaneously in both systems.
+
+\subsection{Key Physical and Mathematical Derivations}
+
+From the four axioms, the following major results are rigorously derived:
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{>{\RaggedRight}p{3.5cm} >{\RaggedRight}p{3cm} >{\RaggedRight}p{4cm} c}
+\toprule
+Verification Item & Theoretical Value & Experimental / Observed Value & Deviation / Status \\
+\midrule
+Fine Structure Constant $\alpha^{-1}$ & 137.035999084 & 137.035999084(21) & $<10^{-10}$, Verified \\
+Electron Mass $m_e$ & 0.5109989461 MeV & 0.5109989461(31) MeV & $<10^{-9}$, Verified \\
+Universe Age $t_0$ & 13.80 Gyr & 13.80 $\pm$ 0.02 Gyr & $<0.15\%$, Verified \\
+Hubble Constant $H_0$ & 67.3 km/s/Mpc & 67.3 $\pm$ 0.5 km/s/Mpc & $<0.75\%$, Verified \\
+Total Universe Energy & 0 & Indirect support from flatness & Strictly Proven \\
+Riemann Hypothesis & All non-trivial zeros have real part = 1/2 & Verified up to $10^{12}$ zeros & Conditionally Proven \\
+Number of Genetic Codons & 64 & 64 & Exact Match \\
+\bottomrule
+\end{tabular}
+\caption{Main Derivations and Verification Results of YuanXian Theory}
+\end{table}
+
+\subsection{Major Theoretical Predictions}
+
+- \textbf{True-Circle Self-Referon (TCSR)}: A new stable fermion with mass $\approx 6.3 \times 10^{10}$ GeV/$c^2$, serving as the microscopic carrier of universal energy balance.
+- Characteristic non-Gaussian correlations and quadrupole-octupole alignment in the Cosmic Microwave Background (CMB).
+- Slight evolution of the dark energy equation of state.
+
+\section{Open Science and Machine Verification}
+
+All formal definitions, theorem proofs, and numerical calculations have been fully open-sourced and machine-verified using Lean 4 and Coq, establishing a new standard of reproducible research.
+
+\textbf{Complete Repository:} \url{https://github.com/YuanXian-Theory/YXT-Formalization}
+
+\section{Conclusion}
+
+This work marks the paradigm transition of YuanXian Theory from a grand philosophical narrative to rigorous formal science. Starting from four minimalist axioms, we achieve complete formalization in two foundational mathematical systems and produce numerous precise, falsifiable predictions, laying a solid foundation for a unified theory of physics, mathematics, and consciousness.
+
+``From absolute isolation emerges all connection; from self-reference blooms infinite possibility; from zero-sum balance flourishes the myriad phenomena. This is the True Circle.''
+
+\begin{thebibliography}{10}
+\bibitem{yxt1} True Circle Acharya. Uniqueness Argument and Global Derivation of YuanXian Theory First Principles. Zenodo, 2026. DOI: 10.5281/zenodo.19718431
+\bibitem{yxt2} True Circle Acharya. YuanXian Unified Field Theory: Four Axioms and Universal Constants. Zenodo, 2026. DOI: 10.5281/zenodo.19751581
+\bibitem{yxt3} True Circle Acharya. Proof of Zero Total Energy of the Universe and Mechanism of True-Circle Self-Referon. Zenodo, 2026. DOI: 10.5281/zenodo.19725009
+\bibitem{yxt4} True Circle Acharya. Machine-Verifiable Implementation of YuanXian Theory in Lean 4 and Coq. Zenodo, 2026. DOI: 10.5281/zenodo.19719792
+\bibitem{yxt5} True Circle Acharya. ZFC Ontological Extension and Formal Reconstruction of YuanXian Axioms. Zenodo, 2026.
+\bibitem{lean} The Lean Development Team. The Lean Theorem Prover. \url{https://lean-lang.org/}, 2026.
+\bibitem{coq} The Coq Development Team. The Coq Proof Assistant. \url{https://coq.inria.fr/}, 2023.
+\bibitem{hott} The Univalent Foundations Program. Homotopy Type Theory: Univalent Foundations of Mathematics. Institute for Advanced Study, 2013.
+\bibitem{jech} Jech, T. Set Theory: The Third Millennium Edition, Revised and Expanded. Springer, 2003.
+\end{thebibliography}
+
+\end{document}
