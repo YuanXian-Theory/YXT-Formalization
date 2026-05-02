@@ -3,7 +3,7 @@
 **Formalization of YuanXian Theory (YXT)**  
 Self-Referential Mind-Field Type Theory (YXTT) and ZFC Extension
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1996518.svg)](https://doi.org/10.5281/zenodo.1996518)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19965180.svg)](https://doi.org/10.5281/zenodo.19965180)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
@@ -12,7 +12,7 @@ This repository contains the complete formalization of **YuanXian Theory (YXT)**
 
 > **From Philosophical Program to Formal Science: The Complete Axiomatization, Dual Realization and Machine Verification of YuanXian Theory (YXT)**
 
-**DOI**: [10.5281/zenodo.1996518](https://doi.org/10.5281/zenodo.1996518)
+**DOI**: [10.5281/zenodo.19965180](https://doi.org/10.5281/zenodo.19965180)
 
 The theory is realized in two foundational mathematical systems:
 - **YXTT**: Self-Referential Mind-Field Type Theory based on Homotopy Type Theory (HoTT) in Lean 4
