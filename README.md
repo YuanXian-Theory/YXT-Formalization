@@ -3,42 +3,28 @@
 **Formalization of YuanXian Theory (YXT)**  
 Self-Referential Mind-Field Type Theory (YXTT) and ZFC Extension
 
-[![Lean 4](https://img.shields.io/badge/Lean%204-4.7.0+-blue)](https://lean-lang.org/)
-[![Coq](https://img.shields.io/badge/Coq-8.18+-blue)](https://coq.inria.fr/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1996518.svg)](https://doi.org/10.5281/zenodo.1996518)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
 
 This repository contains the complete formalization of **YuanXian Theory (YXT)** as presented in the paper:
 
-> "From Philosophical Program to Formal Science: The Complete Axiomatization, Dual Realization and Machine Verification of YuanXian Theory (YXT)"
+> **From Philosophical Program to Formal Science: The Complete Axiomatization, Dual Realization and Machine Verification of YuanXian Theory (YXT)**
 
-**Core Components:**
+**DOI**: [10.5281/zenodo.1996518](https://doi.org/10.5281/zenodo.1996518)
 
-- **YXTT**: Self-Referential Mind-Field Type Theory built on Homotopy Type Theory (HoTT) in Lean 4
-- **ZFC Extension**: Ontological extension with `SelfReferentialMindField`, `T⁶⁴`, and `UniverseFactor`
-- Machine-verified proofs of the Four Core Axioms (TCSC, STM, FSC, SRM)
+The theory is realized in two foundational mathematical systems:
+- **YXTT**: Self-Referential Mind-Field Type Theory based on Homotopy Type Theory (HoTT) in Lean 4
+- **ZFC Extension**: Ontological extension in classical Zermelo-Fraenkel set theory
+
+## Core Features
+
+- Full formalization of the Four Core Axioms (TCSC, STM, FSC, SRM)
+- Machine-verified proofs in Lean 4 and Coq
 - Derivation of 24 fundamental physical constants
 - Conditional formal proof of the Riemann Hypothesis
-- Proof that total energy of the universe is zero
-- Prediction framework for True-Circle Self-Referon (TCSR)
+- Proof of zero total energy of the universe
+- Prediction of the True-Circle Self-Referon (TCSR)
 
-## Project Structure
-
-- `lean/` — Lean 4 formalization (primary)
-- `coq/` — Coq formalization
-- `python/` — Numerical calculations and constant derivation
-- `docs/` — Papers and supplementary materials
-
-## Quick Start
-
-```bash
-# Clone the repo
-git clone [https://github.com/YuanXian-Theory/YXT-Formalization.git](https://github.com/YuanXian-Theory/YXT-Formalization.git)
-cd YXT-Formalization
-
-# Build Lean 4 project
-lake exe cache get
-lake build
-
-# Run numerical calculations
-cd python && python run_all_calculations.py
+## Repository Structure
