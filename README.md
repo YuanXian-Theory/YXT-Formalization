@@ -1,34 +1,44 @@
 # YXT-Formalization
-**YuanXian Theory (YXT) — Complete Formalization in Lean 4 and Coq**
 
-This repository contains the full formalization of **YuanXian Theory (YXT)** — a unified axiomatic framework aiming to integrate physics, mathematics, consciousness, and life.
+**Formalization of YuanXian Theory (YXT)**  
+Self-Referential Mind-Field Type Theory (YXTT) and ZFC Extension
+
+[![Lean 4](https://img.shields.io/badge/Lean%204-4.7.0+-blue)](https://lean-lang.org/)
+[![Coq](https://img.shields.io/badge/Coq-8.18+-blue)](https://coq.inria.fr/)
 
 ## Overview
 
-YuanXian Theory is built upon four core axioms:
-- **True Circle Self-Consistency (TCSC)**
-- **Spacetime Manifold Uniqueness (STM)**
-- **Fundamental-Scale Conservation (FSC)**
-- **Self-Referential Mind Field Generation (SRM)**
+This repository contains the complete formalization of **YuanXian Theory (YXT)** as presented in the paper:
 
-It provides two equivalent formal foundations:
-1. **Homotopy Type Theory (HoTT)** implementation — Self-Referential Mind Field Type Theory (YXTT)
-2. **ZFC Set Theory** extension with ontological symbols (`SelfReferentialMindField`, `T⁶⁴`, `UniverseFactor`)
+> "From Philosophical Program to Formal Science: The Complete Axiomatization, Dual Realization and Machine Verification of YuanXian Theory (YXT)"
 
-## Key Results
+**Core Components:**
 
-- Derivation of 24 fundamental physical constants with high precision
-- Conditional proof framework for the Riemann Hypothesis
-- Strict proof that total cosmic energy is zero
-- Prediction and QFT of the True-Circle Self-Referon (TCSR)
-- Machine-verified implementation in Lean 4 and Coq
+- **YXTT**: Self-Referential Mind-Field Type Theory built on Homotopy Type Theory (HoTT) in Lean 4
+- **ZFC Extension**: Ontological extension with `SelfReferentialMindField`, `T⁶⁴`, and `UniverseFactor`
+- Machine-verified proofs of the Four Core Axioms (TCSC, STM, FSC, SRM)
+- Derivation of 24 fundamental physical constants
+- Conditional formal proof of the Riemann Hypothesis
+- Proof that total energy of the universe is zero
+- Prediction framework for True-Circle Self-Referon (TCSR)
 
-## Repository Structure
-YuanXian-Theory-Formalization/ ├── README.md ├── LICENSE ├── Basic.lean                    # Main entry point (Lean 4) ├── TCSR-QFT/                     # True-Circle Self-Referon QFT │   ├── Field/ │   ├── Lagrangian/ │   ├── Decay/ │   └── … ├── YXTT/                         # Self-Referential Mind Field Type Theory (HoTT) ├── ZFC-Extension/                # ZFC ontological extension ├── Constants/                    # Physical constant derivations ├── Cosmology/ ├── Riemann-Proof/ ├── Theorems/                     # Core theorems & proofs └── Utils/
+## Project Structure
 
-## How to Use
+- `lean/` — Lean 4 formalization (primary)
+- `coq/` — Coq formalization
+- `python/` — Numerical calculations and constant derivation
+- `docs/` — Papers and supplementary materials
+
+## Quick Start
 
 ```bash
-git clone https://github.com/YuanXian-Theory/YuanXian-Theory-Formalization.git
-cd YuanXian-Theory-Formalization
-lake build          # Build Lean 4 project
+# Clone the repo
+git clone [https://github.com/YuanXian-Theory/YXT-Formalization.git](https://github.com/YuanXian-Theory/YXT-Formalization.git)
+cd YXT-Formalization
+
+# Build Lean 4 project
+lake exe cache get
+lake build
+
+# Run numerical calculations
+cd python && python run_all_calculations.py
