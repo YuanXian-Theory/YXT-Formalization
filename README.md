@@ -60,8 +60,8 @@ lake build
 cd python && python run_all_calculations.py
 
 ## Links
-•  Main Paper — DOI: 10.5281/zenodo.1996518
-•  Zenodo Archive — https://zenodo.org/records/1996518
+•  Main Paper — DOI: 10.5281/zenodo.19965180
+•  Zenodo Archive — https://zenodo.org/records/19965180
 •  Lean 4 — https://lean-lang.org/
 •  Coq Proof Assistant — https://coq.inria.fr/
 
