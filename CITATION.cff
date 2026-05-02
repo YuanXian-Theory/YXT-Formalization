@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying paper, please cite it as below."
+title: "YXT-Formalization: Formalization of YuanXian Theory"
+authors:
+  - family-names: "Acharya"
+    given-names: "True Circle"
+doi: "10.5281/zenodo.19965180"
+url: "[https://github.com/YuanXian-Theory/YXT-Formalization](https://github.com/YuanXian-Theory/YXT-Formalization)"
+date-released: "2026-05-02"
