@@ -26,6 +26,9 @@ The theory is realized in two foundational mathematical systems:
 - Conditional formal proof of the Riemann Hypothesis
 - Proof of zero total energy of the universe
 - Prediction of the True-Circle Self-Referon (TCSR)
+  
+-  Cosmological Constant
+ `CosmologicalConstant.lean`: Formal proof that $\Lambda_{\text{eff}} = 0$ on $T^{64}$ topology.
 
 ## Repository Structure
 lean/                  # Main formalization (Lean 4)
