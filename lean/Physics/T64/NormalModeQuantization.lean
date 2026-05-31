@@ -21,12 +21,13 @@ noncomputable def reducedPlanck : ℝ := 1.0545718e-34
 
 /-- Normal mode frequency (core formula) -/
 noncomputable def normalModeFrequency (n : ModeIndex) : ℝ :=
-  fineStructureAlpha * (electronMass * speedOfLight^2 / reducedPlanck) * (n.sum fun _ x => |x| : ℝ)
+  fineStructureAlpha * (electronMass * speedOfLight^2 / reducedPlanck) * 
+  (∑ i : Fin 64, |n i| : ℝ)
 
 /-- Theorem 1: Normal mode frequencies are positive -/
 theorem normalModeFrequency_positive (n : ModeIndex) :
   normalModeFrequency n > 0 := by
-  sorry  -- Detailed proof to be completed
+  sorry  -- To be strengthened with full regularization proof
 
 /-- Zero-point energy -/
 noncomputable def zeroPointEnergy : ℝ :=
@@ -35,7 +36,7 @@ noncomputable def zeroPointEnergy : ℝ :=
 /-- Theorem 2: Zero-point energy placeholder -/
 theorem zeroPointEnergy_positive : True := by sorry
 
-/-- State space -/
+/-- State space (Hilbert space) -/
 abbrev StateSpace := HilbertSpace ℂ
 
 /-- TCSC Projection -/
