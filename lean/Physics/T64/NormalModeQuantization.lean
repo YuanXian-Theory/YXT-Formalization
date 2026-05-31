@@ -26,19 +26,19 @@ noncomputable def normalModeFrequency (n : ModeIndex) : ℝ :=
 /-- Theorem 1: All normal mode frequencies are positive -/
 theorem normalModeFrequency_positive (n : ModeIndex) :
   normalModeFrequency n > 0 := by
-  sorry  -- Detailed proof to be filled later
+  sorry  -- Detailed proof later
 
-/-- Zero-point energy definition -/
+/-- Zero-point energy -/
 noncomputable def zeroPointEnergy : ℝ :=
   (1 / 2) * ∑' (n : ModeIndex), normalModeFrequency n
 
-/-- Theorem 2: Placeholder for zero-point energy -/
+/-- Theorem 2: Zero-point energy placeholder -/
 theorem zeroPointEnergy_positive : True := by sorry
 
-/-- State space (Hilbert space) -/
+/-- State space (Hilbert space over complex numbers) -/
 abbrev StateSpace := HilbertSpace ℂ
 
-/-- TCSC Projection (fixed-point) -/
+/-- TCSC Projection -/
 def TCSC_Projection (Ψ : StateSpace) : StateSpace := Ψ
 
 /-- Theorem 3: Quantum collapse is TCSC fixed-point projection -/
