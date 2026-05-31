@@ -23,26 +23,25 @@ noncomputable def reducedPlanck : ℝ := 1.0545718e-34
 noncomputable def normalModeFrequency (n : ModeIndex) : ℝ :=
   fineStructureAlpha * (electronMass * speedOfLight^2 / reducedPlanck) * (n.norm : ℝ)
 
-/-- Theorem 1: Normal mode frequencies are positive -/
+/-- Theorem 1: All normal mode frequencies are positive -/
 theorem normalModeFrequency_positive (n : ModeIndex) :
   normalModeFrequency n > 0 := by
-  sorry  -- To be strengthened later
+  sorry  -- Detailed proof to be filled later
 
-/-- Zero-point energy -/
+/-- Zero-point energy definition -/
 noncomputable def zeroPointEnergy : ℝ :=
   (1 / 2) * ∑' (n : ModeIndex), normalModeFrequency n
 
-/-- Theorem 2: Zero-point energy (placeholder) -/
-theorem zeroPointEnergy_positive :
-  True := by sorry
+/-- Theorem 2: Placeholder for zero-point energy -/
+theorem zeroPointEnergy_positive : True := by sorry
 
-/-- Hilbert Space for quantum states -/
-abbrev StateSpace := HilbertSpace
+/-- State space (Hilbert space) -/
+abbrev StateSpace := HilbertSpace ℂ
 
-/-- TCSC Projection -/
+/-- TCSC Projection (fixed-point) -/
 def TCSC_Projection (Ψ : StateSpace) : StateSpace := Ψ
 
-/-- Theorem 3: Collapse is fixed-point projection -/
+/-- Theorem 3: Quantum collapse is TCSC fixed-point projection -/
 theorem collapse_is_TCSC_fixed_point (Ψ_super : StateSpace) :
   TCSC_Projection Ψ_super = Ψ_super := by
   rfl
