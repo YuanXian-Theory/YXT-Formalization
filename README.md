@@ -55,6 +55,20 @@ Software / Repository
 git clone [https://github.com/YuanXian-Theory/YXT-Formalization.git](https://github.com/YuanXian-Theory/YXT-Formalization.git)
 cd YXT-Formalization
 
+## Recent Updates (2026年6月)
+
+### T⁶⁴ Normal Mode Quantization Formalization
+- Added `lean/Physics/T64/T64_Basic.lean`
+- Added `lean/Physics/T64/NormalModeQuantization.lean`
+
+This formalizes the core theorems from the paper:
+> **Normal Mode Quantization on T⁶⁴: Based on the YuanXian Living Organism Ontology** (v2.0)
+
+**Formalized Theorems:**
+- Normal mode spectrum discreteness
+- Zero-point energy
+- Quantum collapse as TCSC fixed-point projection
+
 # Build Lean 4 project
 lake exe cache get
 lake build
