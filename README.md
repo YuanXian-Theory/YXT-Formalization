@@ -41,15 +41,10 @@ This repository supports the following papers (code and supplementary materials 
 ## Repository Structure
 . ├── lean/                  # Lean 4 formalizations (main) │   ├── TCSC/              # Core TCSC axioms and completeness │   ├── YXTT/              # Self-Referential Mind-Field Type Theory │   ├── Physics/T64/       # T⁶⁴ topology and quantization │   ├── Constants/         # Physical constants derivations │   └── Theorems/          # Derived theorems (STM, SRM, FSC, etc.) ├── coq/                   # Rocq/Coq formalizations ├── papers/                # LaTeX sources, PDFs, and supplementary materials ├── python/                # Numerical verification & simulations ├── docs/                  # Documentation and tool comparison ├── lake.toml ├── CITATION.cff └── LICENSE
 
-## Software / Repository
-[@misc](https://x.com/misc){yxt_formalization,
-  author       = {YuanXian Institute},
-  title        = {YXT-Formalization},
-  year         = {2026},
-  url          = {[https://github.com/YuanXian-Theory/YXT-Formalization](https://github.com/YuanXian-Theory/YXT-Formalization)},
-  doi          = {10.5281/zenodo.19965180}
-}
-Software / Repository
+## Links
+•  Main Paper: Zenodo
+•  Lean 4: https://lean-lang.org/
+•  Rocq: https://coq.inria.fr/
 
 ## Quick Start (Lean 4)
 ```bash
