@@ -27,10 +27,8 @@ This repository supports the following papers (code and supplementary materials 
    - DOI: [10.5281/zenodo.19965180](https://doi.org/10.5281/zenodo.19965180)  
    - Core reference paper for the overall repository structure.
 
-3. **Normal Mode Quantization on T⁶⁴: Based on the YuanXian Living Organism Ontology (v2.0)**  
+3. **Normal Mode Quantization on T⁶⁴: Based on the YuanXian Living Organism Ontology (v2.0)**     - DOI: [10.5281/zenodo.20473056](https://doi.org/10.5281/zenodo.20473056)
    - Recent formalization: `lean/Physics/T64/`
-
-*(Additional papers will be added here as they are formalized.)*
 
 ## Core Contributions (from the new TCSC paper)
 •  Machine-verified proof of TCSC logical completeness (∀ p, Provable p ∨ Provable (¬p)) without sorry.
