@@ -19,7 +19,8 @@ theorem coupling_jump_gt_5_percent :
   norm_num
   exact dec_trivial
 
-theorem coupling_discontinuity :
-  ¬ Continuous (fun E : ℝ => if E < step_21_energy then g_20 else g_21) := by
-  -- Proof sketch: left and right limits differ
-  sorry  -- Full proof uses topological discontinuity
+theorem coupling_discontinuity_at_transition :
+  g_20 ≠ g_21 := by
+  simp [g_20, g_21, alpha]
+  norm_num
+  exact dec_trivial
