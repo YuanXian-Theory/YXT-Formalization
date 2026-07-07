@@ -19,7 +19,7 @@ This repository supports the following papers (code and supplementary materials 
 1. **True Circle Self-Consistency Law (TCSC) System: Logical Completeness and Universal Derivation Verification**  
    - Author: Zhenyuan Acharya (真圆阿奢黎)  
    - Date: June 2026  
-   - DOI: [10.5281/zenodo.19965180](https://doi.org/10.5281/zenodo.19965180) (or latest version)  
+   - DOI: [10.5281/zenodo.20929778](https://doi.org/10.5281/zenodo.20929778)
    - **Main focus of this update**: Full Lean 4 proof of TCSC completeness (`tcsc_completeness`), STM/SRM/FSC derivations, T⁶⁴ topology, and axiom independence.  
    - Location: `papers/TCSC_Completeness/`, `lean/TCSC/`
 
