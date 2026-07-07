@@ -14,21 +14,31 @@ It implements dual realizations:
 
 ## Supported Papers
 
+## Supported Papers
+
 This repository supports the following papers (code and supplementary materials are organized under `papers/` and corresponding `lean/` / `coq/` subdirectories):
 
 1. **True Circle Self-Consistency Law (TCSC) System: Logical Completeness and Universal Derivation Verification**  
    - Author: Zhenyuan Acharya (真圆阿奢黎)  
    - Date: June 2026  
-   - DOI: [10.5281/zenodo.20929778](https://doi.org/10.5281/zenodo.20929778)
-   - **Main focus of this update**: Full Lean 4 proof of TCSC completeness (`tcsc_completeness`), STM/SRM/FSC derivations, T⁶⁴ topology, and axiom independence.  
+   - DOI: [10.5281/zenodo.20929778](https://doi.org/10.5281/zenodo.20929778)  
+   - Main focus: Full Lean 4 proof of TCSC completeness, STM/SRM/FSC derivations, T⁶⁴ topology, and axiom independence.  
    - Location: `papers/TCSC_Completeness/`, `lean/TCSC/`
 
 2. **From Philosophical Program to Formal Science: The Complete Axiomatization, Dual Realization and Machine Verification of YuanXian Theory (YXT)**  
    - DOI: [10.5281/zenodo.19965180](https://doi.org/10.5281/zenodo.19965180)  
    - Core reference paper for the overall repository structure.
 
-3. **Normal Mode Quantization on T⁶⁴: Based on the YuanXian Living Organism Ontology (v2.0)**     - DOI: [10.5281/zenodo.20473056](https://doi.org/10.5281/zenodo.20473056)
+3. **Normal Mode Quantization on T⁶⁴: Based on the YuanXian Living Organism Ontology (v2.0)**  
+   - DOI: [10.5281/zenodo.20473056](https://doi.org/10.5281/zenodo.20473056)  
    - Recent formalization: `lean/Physics/T64/`
+
+4. **本体论的数学证明 —— 元宪理论35步降维链的Lean 4形式化验证**  
+   **(Ontological Mathematics Proof — Lean 4 Formal Verification of the 35-Step Dimensional Reduction Chain under YuanXian Theory)**  
+   - Author: Zhenyuan Acharya (真圆阿奢黎)  
+   - Date: July 2026  
+   - Key focus: 35-step dimensional reduction chain, Fourier-Laplace spectrum, coupling constant jump (Step 21), 24 fundamental constants derivation, genetic code bijection, and consciousness coupling double-slit prediction.  
+   - Location: `papers/Ontological_Mathematics_Proof/`, `lean/Reduction/`, `lean/Consciousness/`
 
 ## Core Contributions (from the new TCSC paper)
 •  Machine-verified proof of TCSC logical completeness (∀ p, Provable p ∨ Provable (¬p)) without sorry.
@@ -37,7 +47,7 @@ This repository supports the following papers (code and supplementary materials 
 •  Tool comparison: Lean 4 vs. Rocq.
 
 ## Repository Structure
-. ├── lean/                  # Lean 4 formalizations (main) │   ├── TCSC/              # Core TCSC axioms and completeness │   ├── YXTT/              # Self-Referential Mind-Field Type Theory │   ├── Physics/T64/       # T⁶⁴ topology and quantization │   ├── Constants/         # Physical constants derivations │   └── Theorems/          # Derived theorems (STM, SRM, FSC, etc.) ├── coq/                   # Rocq/Coq formalizations ├── papers/                # LaTeX sources, PDFs, and supplementary materials ├── python/                # Numerical verification & simulations ├── docs/                  # Documentation and tool comparison ├── lake.toml ├── CITATION.cff └── LICENSE
+. ├── lean/                  # Lean 4 formalizations (primary) │   ├── TCSC/              # TCSC completeness and core laws │   ├── Reduction/         # 35-step dimensional reduction chain │   ├── Physics/T64/       # T⁶⁴ topology and quantization │   ├── Constants/         # 24 fundamental physical constants │   ├── Biology/           # Genetic code and symbiotic index │   └── Consciousness/     # Consciousness coupling and double-slit ├── coq/                   # Rocq/Coq formalizations ├── papers/                # LaTeX sources and supplementary materials ├── python/                # Numerical verification & simulations ├── docs/                  # Documentation and tool comparison ├── lake.toml ├── CITATION.cff └── LICENSE l
 
 ## Links
 •  Main Paper: Zenodo
@@ -45,17 +55,23 @@ This repository supports the following papers (code and supplementary materials 
 •  Rocq: https://coq.inria.fr/
 
 ## Quick Start (Lean 4)
+
 ```bash
 git clone https://github.com/YuanXian-Theory/YXT-Formalization.git
 cd YXT-Formalization
 
-# Build
+# Build dependencies
 lake exe cache get
 lake build
 
-# Run specific TCSC completeness proof (example)
-lake exe cache get
+# Example: Run TCSC completeness
 lean --run lean/TCSC/Completeness.lean
 
+# Run coupling jump theorem
+lean --run lean/Reduction/CouplingJump.lean
 
-
+## Related Repositories
+•  YuanXian-Cosmology: Cosmological predictions and T⁶⁴ projections
+•  YuanXian-Biology: Genetic code and symbiotic equilibrium
+•  Yuanxian-Consciousness: Consciousness coupling and double-slit experiments
+•  MachineVerification: Axiom independence proofs
