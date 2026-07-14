@@ -14,8 +14,6 @@ It implements dual realizations:
 
 ## Supported Papers
 
-## Supported Papers
-
 This repository supports the following papers (code and supplementary materials are organized under `papers/` and corresponding `lean/` / `coq/` subdirectories):
 
 1. **True Circle Self-Consistency Law (TCSC) System: Logical Completeness and Universal Derivation Verification**  
@@ -40,6 +38,17 @@ This repository supports the following papers (code and supplementary materials 
    - Key focus: 35-step dimensional reduction chain, Fourier-Laplace spectrum, coupling constant jump (Step 21), 24 fundamental constants derivation, genetic code bijection, and consciousness coupling double-slit prediction.  
    - Location: `papers/Ontological_Mathematics_Proof/`, `lean/Reduction/`, `lean/Consciousness/`
 
+5. **从形式化验证到范式革命 —— 元宪理论35步降维链的Lean 4机器证明**  
+   *(From Formal Verification to Paradigm Revolution — Lean 4 Machine Proof of the 35-Step Dimensional Reduction Chain under YuanXian Theory)*  
+   - Author: Zhenyuan Acharya  
+   - Date: July 2026  
+   - Key modules: Reduction chain, coupling jump, fundamental constants, genetic code bijection, consciousness coupling.
+- `lean/Reduction/` — 35-step reduction chain and spectral truncation
+- `lean/Physics/T64/` — T⁶⁴ topology and quantization
+- `lean/Constants/` — 24 fundamental constants derivation
+- `lean/Biology/` — Genetic code and symbiotic index
+- `lean/Consciousness/` — Consciousness coupling and double-slit effect    
+   - 
 ## Core Contributions (from the new TCSC paper)
 •  Machine-verified proof of TCSC logical completeness (∀ p, Provable p ∨ Provable (¬p)) without sorry.
 •  Formal derivations of STM, SRM, FSC, and T⁶⁴ topology.
