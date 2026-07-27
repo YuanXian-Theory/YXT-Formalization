@@ -17,7 +17,7 @@ It implements dual realizations:
 This repository supports the following papers (code and supplementary materials are organized under `papers/` and corresponding `lean/` / `coq/` subdirectories):
 
 1. **True Circle Self-Consistency Law (TCSC) System: Logical Completeness and Universal Derivation Verification**  
-   - Author: Zhenyuan Acharya (true圆阿奢黎)  
+   - Author: Zhenyuan Acharya  
    - Date: June 2026  
    - DOI: [10.5281/zenodo.20929778](https://doi.org/10.5281/zenodo.20929778)  
    - Main focus: Full Lean 4 proof of TCSC completeness, STM/SRM/FSC derivations, T⁶⁴ topology, and axiom independence.  
@@ -34,20 +34,25 @@ This repository supports the following papers (code and supplementary materials 
 4. **Ontological Mathematics Proof — Lean 4 Formal Verification of the 35-Step Dimensional Reduction Chain under YuanXian Theory**  
    - Author: Zhenyuan Acharya  
    - Date: July 2026  
-   - Key focus: 35-step dimensional reduction chain, Fourier-Laplace spectrum, coupling constant jump (Step 21), 24 fundamental constants derivation, genetic code bijection, and consciousness coupling double-slit prediction.  
-   - Location: `papers/Ontological_Mathematics_Proof/`, `lean/Reduction/`, `lean/Consciousness/`
+   - Key focus: 35-step dimensional reduction chain, Fourier-Laplace spectrum, coupling constant jump, 24 fundamental constants derivation.  
+   - Location: `lean/Reduction/`, `lean/Consciousness/`
 
 5. **From Formal Verification to Paradigm Revolution — Lean 4 Machine Proof of the 35-Step Dimensional Reduction Chain under YuanXian Theory**  
    - Author: Zhenyuan Acharya  
    - Date: July 2026  
-   - Key modules: Reduction chain, coupling jump, fundamental constants, genetic code bijection, consciousness coupling.
-   - Location: `lean/Reduction/`, `lean/Physics/T64/`, `lean/Constants/`, `lean/Biology/`, `lean/Consciousness/`
+   - Location: `lean/Reduction/`, `lean/Physics/T64/`, `lean/Constants/`
 
 6. **Langlands-YXT Correspondence — Constructive Correspondence between the T⁶⁴ Self-Referential Operator Spectrum and Number-Theoretic L-Functions**  
    - Author: Zhenyuan Acharya  
    - Date: July 2026  
-   - Key focus: Spectral-statistical compatibility of T⁶⁴ Laplacian eigenvalues and zeros of automorphic L-functions; fully faithful functor chain from T⁶⁴ topology to Galois representations and L-functions; topological reformulation of Langlands reciprocity.  
+   - Key focus: Spectral-statistical compatibility, fully faithful functor chain, topological reformulation of Langlands reciprocity.  
    - Location: `lean/Langlands/`
+
+7. **Ring-Style Commensuration of Mathematical Conjectures and Physical Constants — Constructive Readings from the T⁶⁴ Topological Invariant System**  
+   - Author: Zhenyuan Acharya  
+   - Date: July 2026  
+   - Key focus: Ring-style identity between the seven Millennium Prize Problems and seven fundamental physical constants, both understood as topological-charge readings of the same T⁶⁴ component; three classes of ring-section reading deviations.  
+   - Location: `lean/Commensuration/`
 
 ## Core Contributions
 
@@ -55,7 +60,8 @@ This repository supports the following papers (code and supplementary materials 
 - Formal derivations of STM, SRM, FSC, and T⁶⁴ topology.
 - Model-theoretic independence proofs for the four core laws.
 - 35-step dimensional reduction chain and coupling-constant jump.
-- Langlands-YXT topological correspondence (spectral consistency, fully faithful functor chain, topological reciprocity).
+- Langlands-YXT topological correspondence.
+- Ring-style commensuration between mathematical conjectures and physical constants.
 
 ## Repository Structure
 
@@ -68,7 +74,8 @@ This repository supports the following papers (code and supplementary materials 
 │   ├── Constants/         # 24 fundamental physical constants
 │   ├── Biology/           # Genetic code and symbiotic index
 │   ├── Consciousness/     # Consciousness coupling and double-slit
-│   └── Langlands/         # Langlands-YXT topological correspondence
+│   ├── Langlands/         # Langlands-YXT topological correspondence
+│   └── Commensuration/    # Ring-style commensuration (conjectures ↔ constants)
 ├── coq/                   # Rocq/Coq formalizations
 ├── papers/                # LaTeX sources and supplementary materials
 ├── python/                # Numerical verification & simulations
@@ -97,11 +104,11 @@ lake build
 # Example: Run TCSC completeness
 lean --run lean/TCSC/Completeness.lean
 
-# Run coupling jump theorem
-lean --run lean/Reduction/CouplingJump.lean
-
 # Run Langlands-YXT spectral consistency
 lean --run lean/Langlands/SpectralConsistency.lean
+
+# Run Ring-Style Commensuration theorem
+lean --run lean/Commensuration/CommensurationTheorem.lean
 ```
 
 ## Related Repositories
@@ -110,3 +117,4 @@ lean --run lean/Langlands/SpectralConsistency.lean
 - YuanXian-Biology: Genetic code and symbiotic equilibrium
 - Yuanxian-Consciousness: Consciousness coupling and double-slit experiments
 - MachineVerification: Axiom independence proofs
+- YXT-Millennium-Seven: Millennium Prize Problems formalizations
