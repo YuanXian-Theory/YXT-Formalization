@@ -3,8 +3,8 @@
 Formalization of the **Langlands-YXT Topological Correspondence Principle**  
 in Lean 4, corresponding to the paper:
 
-> *Langlands-YXT Correspondence — Constructive Correspondence between  
-> T⁶⁴ Self-Referential Operator Spectrum and Number-Theoretic L-Functions*
+> **Langlands-YXT Correspondence — Constructive Correspondence between  
+> the T⁶⁴ Self-Referential Operator Spectrum and Number-Theoretic L-Functions**
 
 ## Core Theorems (Interface Layer)
 
