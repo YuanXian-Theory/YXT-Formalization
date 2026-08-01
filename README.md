@@ -54,6 +54,12 @@ This repository supports the following papers (code and supplementary materials 
    - Key focus: Ring-style identity between the seven Millennium Prize Problems and seven fundamental physical constants, both understood as topological-charge readings of the same T⁶⁴ component; three classes of ring-section reading deviations.  
    - Location: `lean/Commensuration/`
 
+8. **Infinity is Zero — Unification of Infinity and Infinitesimal in the T⁶⁴ Topological Self-Referential Closed Loop**  
+   - Author: Zhenyuan Acharya  
+   - Date: July 2026  
+   - Key focus: Bounded Infinity Theory; spectral gap Δ > 0; TCSC contraction + Banach fixed point on T⁶⁴; FSC conservation; infinity unification theorem ∞ = 0 = −∞; dissolution of physical singularities at the interface layer.  
+   - Location: `lean/Infinity/`
+
 ## Core Contributions
 
 - Machine-verified proof of TCSC logical completeness.
@@ -62,6 +68,7 @@ This repository supports the following papers (code and supplementary materials 
 - 35-step dimensional reduction chain and coupling-constant jump.
 - Langlands-YXT topological correspondence.
 - Ring-style commensuration between mathematical conjectures and physical constants.
+- Infinity unification (∞ = 0 = −∞) and Bounded Infinity Theory.
 
 ## Repository Structure
 
@@ -75,7 +82,8 @@ This repository supports the following papers (code and supplementary materials 
 │   ├── Biology/           # Genetic code and symbiotic index
 │   ├── Consciousness/     # Consciousness coupling and double-slit
 │   ├── Langlands/         # Langlands-YXT topological correspondence
-│   └── Commensuration/    # Ring-style commensuration (conjectures ↔ constants)
+│   ├── Commensuration/    # Ring-style commensuration (conjectures ↔ constants)
+│   └── Infinity/          # Infinity unification & Bounded Infinity Theory
 ├── coq/                   # Rocq/Coq formalizations
 ├── papers/                # LaTeX sources and supplementary materials
 ├── python/                # Numerical verification & simulations
@@ -109,6 +117,9 @@ lean --run lean/Langlands/SpectralConsistency.lean
 
 # Run Ring-Style Commensuration theorem
 lean --run lean/Commensuration/CommensurationTheorem.lean
+
+# Run Infinity Unification theorem
+lean --run lean/Infinity/InfinityUnification.lean
 ```
 
 ## Related Repositories
