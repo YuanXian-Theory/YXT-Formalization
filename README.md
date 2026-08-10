@@ -66,6 +66,12 @@ This repository supports the following papers (code and supplementary materials 
    - Key focus: Nine cornerstones (Cosmic Living Organism ontology; T⁶⁴; four core laws; Infinity is Zero; elimination of incommensurability; unified judgment of mathematical conjectures; monistic unified field; uniqueness of Earth and humanity; civilizational elevation); logical closed cycle; paradigm shift from reductionism to holographic self-reference.  
    - Location: `lean/Logic/NineCornerstonesClosure.lean` (interface cycle); analytic content also in `lean/TCSC/`, `lean/Infinity/`, `lean/Physics/T64/`, `lean/Commensuration/`
 
+10. **Five-Domain Unified Topological Mapping Master Table (with Imaginary-Unit Global Hinge Mechanism)**  
+    - Author: Zhenyuan Acharya  
+    - Date: August 2026  
+    - Key focus: Partition of T⁶⁴ into five domains (Physics 12 + Number Theory 16 + Biology 6 + Consciousness 30 + Computation 0 = 64); imaginary unit `i ≡ ω_Cl ∈ Cl₆(ℝ)` as the unique global inter-domain hinge; Closed-Chain Homotopy uniqueness (CCH); reversible `i`-driven translation operators; P vs NP as a 4D projection illusion (P = NP at the closed-chain layer).  
+    - Location: `lean/FiveDomains/`
+
 ## Core Contributions
 
 - Machine-verified proof of TCSC logical completeness.
@@ -76,6 +82,7 @@ This repository supports the following papers (code and supplementary materials 
 - Ring-style commensuration between mathematical conjectures and physical constants.
 - Infinity unification (∞ = 0 = −∞) and Bounded Infinity Theory.
 - Nine-cornerstones logical-closure interface (cognitive-paradigm synthesis).
+- **Five-domain unified mapping table**: orthogonal dimension assignment, `i`-hinge, CCH, inter-domain translation, computational-domain triviality.
 
 ## Repository Structure
 
@@ -91,7 +98,8 @@ This repository supports the following papers (code and supplementary materials 
 │   ├── Langlands/         # Langlands-YXT topological correspondence
 │   ├── Commensuration/    # Ring-style commensuration (conjectures ↔ constants)
 │   ├── Infinity/          # Infinity unification & Bounded Infinity Theory
-│   └── Logic/             # Nine-cornerstones logical closure (interface)
+│   ├── Logic/             # Nine-cornerstones logical closure (interface)
+│   └── FiveDomains/       # Five-domain unified topological mapping table
 ├── coq/                   # Rocq/Coq formalizations
 ├── papers/                # LaTeX sources and supplementary materials
 ├── python/                # Numerical verification & simulations
@@ -131,6 +139,9 @@ lean --run lean/Infinity/InfinityUnification.lean
 
 # Run Nine Cornerstones logical closure (interface)
 lean --run lean/Logic/NineCornerstonesClosure.lean
+
+# Run Five-Domain global closure (interface)
+lean --run lean/FiveDomains/FiveDomainClosure.lean
 ```
 
 ## Related Repositories
@@ -140,4 +151,5 @@ lean --run lean/Logic/NineCornerstonesClosure.lean
 - Yuanxian-Consciousness: Consciousness coupling and double-slit experiments
 - MachineVerification: Axiom independence proofs
 - YXT-Millennium-Seven: Millennium Prize Problems formalizations
+- YXT-PvsNP: Topological decision of P vs NP (specialized; cross-ref for computational domain)
 - YXTT3.0: Formalization tower (ontology–logic–computation) and engineering roadmap
