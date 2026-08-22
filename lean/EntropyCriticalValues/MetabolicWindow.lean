@@ -11,11 +11,11 @@ import YuanXian.EntropyCriticalValues.Complementarity
 
 namespace YuanXian.EntropyCriticalValues
 
-/-- Predicate: entropy lies inside the metabolic / survivable window -/
+/-- Predicate: entropy lies inside the metabolic / survivable window. -/
 def InMetabolicWindow (Omega : ℝ) : Prop :=
   OmegaCrit2 < Omega ∧ Omega ≤ OmegaCrit1
 
-/-- The window is non-empty -/
+/-- The window is non-empty. -/
 theorem metabolic_window_nonempty :
     ∃ Omega, InMetabolicWindow Omega := by
   refine ⟨ (OmegaCrit1 + OmegaCrit2) / 2, ?_ ⟩
@@ -25,18 +25,19 @@ theorem metabolic_window_nonempty :
   have h2 := omega_crit2_approx
   constructor <;> linarith
 
-/-- Upper boundary is exactly Ω_crit,1 -/
+/-- Upper boundary is exactly Ω_crit,1. -/
 theorem upper_boundary :
     InMetabolicWindow OmegaCrit1 := by
   unfold InMetabolicWindow
   constructor
-  · have h := omega_complementarity
-    have := omega_crit2_approx
-    have := omega_crit1_approx
+  · -- Ω_crit,2 < Ω_crit,1  follows from complementarity and positivity
+    have hsum := omega_complementarity
+    have h2 := omega_crit2_approx
+    have h1 := omega_crit1_approx
     linarith
   · le_rfl
 
-/-- Strict lower boundary -/
+/-- Strict lower boundary: Ω_crit,2 itself is not inside the open-lower window. -/
 theorem lower_boundary_strict :
     ¬ InMetabolicWindow OmegaCrit2 := by
   unfold InMetabolicWindow

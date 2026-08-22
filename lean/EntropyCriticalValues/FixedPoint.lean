@@ -15,26 +15,25 @@ namespace YuanXian.EntropyCriticalValues
 def charPoly (lam : ℝ) : ℝ :=
   lam^2 - deltaYXT * lam - (1 - deltaYXT)
 
-/-- The root λ₁ = 1 satisfies the characteristic equation -/
+/-- The root λ₁ = 1 satisfies the characteristic equation. -/
 theorem lambda1_is_root :
     charPoly 1 = 0 := by
   unfold charPoly
-  have h := delta_sq_add_delta
-  -- 1 - δ - (1-δ) = 0
-  ring_nf
-  linarith [h]
+  -- 1 - δ - (1 - δ) = 0
+  ring
 
-/-- The second root λ₂ = δ - 1 -/
+/-- The second root λ₂ = δ - 1. -/
 def lambda2 : ℝ := deltaYXT - 1
 
 theorem lambda2_is_root :
     charPoly lambda2 = 0 := by
   unfold charPoly lambda2
+  -- Expand and use δ² = 1 - δ
   have h := delta_sq_eq
   ring_nf
   linarith [h]
 
-/-- |λ₂| = 1 - δ = δ²  (decay factor) -/
+/-- |λ₂| = 1 - δ = δ²  (decay factor). -/
 theorem abs_lambda2_eq_delta_sq :
     |lambda2| = deltaYXT ^ 2 := by
   unfold lambda2
@@ -45,7 +44,7 @@ theorem abs_lambda2_eq_delta_sq :
   linarith [delta_sq_eq]
 
 /-- Stability margin statement used in the paper:
-    Ω_max = 1 - δ²   -/
+    Ω_max = 1 - δ² = δ. -/
 theorem stability_margin :
     1 - deltaYXT ^ 2 = deltaYXT := by
   linarith [delta_sq_eq]
