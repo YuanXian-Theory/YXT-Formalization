@@ -72,6 +72,12 @@ This repository supports the following papers (code and supplementary materials 
     - Key focus: Partition of T⁶⁴ into five domains (Physics 12 + Number Theory 16 + Biology 6 + Consciousness 30 + Computation 0 = 64); imaginary unit `i ≡ ω_Cl ∈ Cl₆(ℝ)` as the unique global inter-domain hinge; Closed-Chain Homotopy uniqueness (CCH); reversible `i`-driven translation operators; P vs NP as a 4D projection illusion (P = NP at the closed-chain layer).  
     - Location: `lean/FiveDomains/`
 
+11. **Number-Theoretic Origin and Topological Significance of the Entropy Critical Values in Yuanxian Theory** (Short Treatise Series NO. 14)  
+    - Author: Zhenyuan Acharya  
+    - Date: August 2026  
+    - Key focus: Derivation of entropy critical values $\Omega_{\mathrm{crit},1} = \delta_{\mathrm{YXT}} \approx 0.618$ and $\Omega_{\mathrm{crit},2} = \delta_{\mathrm{YXT}}^2 \approx 0.382$ from the incomplete-ratio constant; complementarity $\Omega_1 + \Omega_2 = 1$; metabolic / survivable window $0.382 < \Omega \le 0.618$; formal bridge between pure topological iteration and physical projection in the 35-step dimensional reduction.  
+    - Location: `lean/EntropyCriticalValues/`, `papers/EntropyCriticalValues/`, `docs/EntropyCriticalValues.md`
+
 ## Core Contributions
 
 - Machine-verified proof of TCSC logical completeness.
@@ -83,6 +89,7 @@ This repository supports the following papers (code and supplementary materials 
 - Infinity unification (∞ = 0 = −∞) and Bounded Infinity Theory.
 - Nine-cornerstones logical-closure interface (cognitive-paradigm synthesis).
 - **Five-domain unified mapping table**: orthogonal dimension assignment, `i`-hinge, CCH, inter-domain translation, computational-domain triviality.
+- **Entropy critical values**: number-theoretic derivation of $\Omega_{\mathrm{crit},1}$ and $\Omega_{\mathrm{crit},2}$, complementarity, and metabolic window for the 35-step reduction.
 
 ## Repository Structure
 
@@ -99,11 +106,14 @@ This repository supports the following papers (code and supplementary materials 
 │   ├── Commensuration/    # Ring-style commensuration (conjectures ↔ constants)
 │   ├── Infinity/          # Infinity unification & Bounded Infinity Theory
 │   ├── Logic/             # Nine-cornerstones logical closure (interface)
-│   └── FiveDomains/       # Five-domain unified topological mapping table
+│   ├── FiveDomains/       # Five-domain unified topological mapping table
+│   └── EntropyCriticalValues/  # Ω_crit,1 / Ω_crit,2 / metabolic window (NO.14)
 ├── coq/                   # Rocq/Coq formalizations
 ├── papers/                # LaTeX sources and supplementary materials
+│   └── EntropyCriticalValues/  # Paper support for Short Treatise NO.14
 ├── python/                # Numerical verification & simulations
 ├── docs/                  # Documentation and tool comparison
+│   └── EntropyCriticalValues.md
 ├── lake.toml
 ├── CITATION.cff
 └── LICENSE
@@ -142,6 +152,12 @@ lean --run lean/Logic/NineCornerstonesClosure.lean
 
 # Run Five-Domain global closure (interface)
 lean --run lean/FiveDomains/FiveDomainClosure.lean
+
+# Run Entropy Critical Values formalization (Short Treatise NO.14)
+lean --run lean/EntropyCriticalValues/DeltaYXT.lean
+lean --run lean/EntropyCriticalValues/OmegaCrit1.lean
+lean --run lean/EntropyCriticalValues/Complementarity.lean
+lean --run lean/EntropyCriticalValues/MetabolicWindow.lean
 ```
 
 ## Related Repositories
